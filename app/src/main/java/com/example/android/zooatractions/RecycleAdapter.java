@@ -1,10 +1,15 @@
 package com.example.android.zooatractions;
 
+import android.content.Intent;
+import android.database.Observable;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +24,8 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.ViewHold
     public RecycleAdapter(List<Animals> animalsList) {
         this.animalsList = animalsList;
     }
+
+
 
 
     @Override
@@ -43,12 +50,20 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.ViewHold
 
 
     public class ViewHolder extends RecyclerView.ViewHolder {
+        private static final String TAG ="testing" ;
         TextView tvSpecies;
         TextView tvNumber;
         public ViewHolder(View itemView) {
             super(itemView);
             tvSpecies = (TextView) itemView.findViewById(R.id.tvAnimalName);
             tvNumber = (TextView) itemView.findViewById(R.id.tvAnimalAmount);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.d(TAG, "onClick: " + tvSpecies.getText());
+                    EventBus.getDefault().post(new PassingEvent(tvSpecies.getText().toString()));
+                }
+            });
         }
     }
 }

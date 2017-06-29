@@ -83,9 +83,9 @@ public class SQLSetup extends SQLiteOpenHelper {
         String query = "SELECT * FROM " +TABLE_NAME+ " WHERE " + ANIMAL_GROUP +" = '" +g+ "' ";
         Cursor cursor = database.rawQuery(query,null);
         if(cursor.moveToFirst())
-        {do {
-            Log.d(TAG, "getByGroup: " +count+ cursor.getString(0)+cursor.getString(1)+cursor.getString(2)+cursor.getString(3)+cursor.getString(4)+cursor.getString(5));
-            a[count] = new Animals(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),cursor.getString(5));
+        {do {   //
+            Log.d(TAG, "getByGroup: " +count+ cursor.getString(5)+cursor.getString(4)+cursor.getString(3)+cursor.getString(2)+cursor.getString(1)+cursor.getString(0));
+            a[count] = new Animals(cursor.getString(5),cursor.getString(4),cursor.getString(3),cursor.getString(2),cursor.getString(1),cursor.getString(0));
             count++;
         }while (cursor.moveToNext());
         }
@@ -102,8 +102,8 @@ public class SQLSetup extends SQLiteOpenHelper {
         if(cursor.moveToFirst())
         {
 
-            Log.d(TAG, "getByGroup: " + cursor.getString(0)+cursor.getString(1)+cursor.getString(2)+cursor.getString(3)+cursor.getString(4)+cursor.getString(5));
-           Animals a = new Animals(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4),cursor.getString(5));
+            Log.d(TAG, "getByGroup: " + cursor.getString(5)+cursor.getString(4)+cursor.getString(3)+cursor.getString(2)+cursor.getString(1)+cursor.getString(0));
+           Animals a = new Animals(cursor.getString(5),cursor.getString(4),cursor.getString(3),cursor.getString(2),cursor.getString(1),cursor.getString(0));
 
             database.close();
             return a;
