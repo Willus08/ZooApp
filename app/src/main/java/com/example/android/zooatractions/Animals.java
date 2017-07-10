@@ -12,12 +12,12 @@ public class Animals implements Serializable {
 
     String Species;
     String Description;
-    String SoundLocation;
-    String ImageLocation;
+    int SoundLocation;
+    int ImageLocation;
     String Number;
     String Group;//pk
 
-    public Animals(String species, String description, String soundLocation, String imageLocation, String number, String group) {
+    public Animals(String species, String description, int soundLocation, int imageLocation, String number, String group) {
         Species = species;
         Description = description;
         SoundLocation = soundLocation;
@@ -43,11 +43,11 @@ public class Animals implements Serializable {
         return Species;
     }
 
-    public String getSoundLocation() {
+    public int getSoundLocation() {
         return SoundLocation;
     }
 
-    public String getImageLocation() {
+    public int getImageLocation() {
         return ImageLocation;
     }
 

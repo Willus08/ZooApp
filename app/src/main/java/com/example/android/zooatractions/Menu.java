@@ -90,35 +90,35 @@ public class Menu extends AppCompatActivity implements  AdapterView.OnItemClickL
 
     public void PoulateList(){
                                     //species, description,sound,image,number,group
-        animalsList.add(new Animals("Dragon","Aincient dragon of yore","C:\\Users\\Android\\AndroidStudioProjects\\ZooAtractions\\app\\src\\main\\res\\raw\\dragon.mp3","C:\\Users\\Android\\AndroidStudioProjects\\ZooAtractions\\app\\src\\main\\res\\raw\\dragon_pic.jpg","2","Mythical"));
-        animalsList.add(new Animals("Phoneix","Bird that reseructs from the dead","thing","here","3","Mythical"));
-        animalsList.add(new Animals("Kraken","Destroyer of ships","thing","here","3","Mythical"));
-        animalsList.add(new Animals("Grifon","Winged death","thing","here","25","Mythical"));
-        animalsList.add(new Animals("Hydra","multi headed beast","thing","here","3","Mythical"));
-
-        animalsList.add(new Animals("Penguin","Cool tuxedo conisur","thing","here","300","Birds"));
-        animalsList.add(new Animals("Pelican","Aquatic thief","thing","here","15","Birds"));
-        animalsList.add(new Animals("Pecock","NBC Mascot","thing","here","13","Birds"));
-        animalsList.add(new Animals("Parrot","Natures recorder","thing","here","is","Birds"));
-        animalsList.add(new Animals("Perguin Falcon","A cool Falcon","thing","here","is","Birds"));
-
-        animalsList.add(new Animals("Shark","Devour of meats","thing","here","35","Sea"));
-        animalsList.add(new Animals("Dolphin","Shark Slayer","thing","here","125","Sea"));
-        animalsList.add(new Animals("Whale","Devourer of kelp","thing","here","5","Sea"));
-        animalsList.add(new Animals("Whale Shark","Devourer of everything","thing","here","10","Sea"));
-        animalsList.add(new Animals("Platapus","Epic Secret Agent","thing","here","20","Sea"));
-
-        animalsList.add(new Animals("Ninja","worlds higest populs yet always unseen","thing","here","10,000","Mammals"));
-        animalsList.add(new Animals("Pirate","Plundere of treasure","thing","here","300","Mammals"));
-        animalsList.add(new Animals("Liger","The coolest animal ever","thing","here","10","Mammals"));
-        animalsList.add(new Animals("Panda","Best thing ever","thing","here","20","Mammals"));
-        animalsList.add(new Animals("Programer","the writers of this app","thing","here","2","Mammals"));
-
-        animalsList.add(new Animals("Ant","common everwhere but here","thing","here","1","Misc"));
-        animalsList.add(new Animals("Scorpion","Taker of souls","thing","here","1","Misc"));
-        animalsList.add(new Animals("Snorlax","Blocker of paths","thing","here","20","Misc"));
-        animalsList.add(new Animals("Snuffalapugus","more cuddly than an elephent","thing","here","1","Misc"));
-        animalsList.add(new Animals("Demon","Real taker of souls","thing","here","2","Misc"));
+        animalsList.add(new Animals("Dragon","Aincient dragon of yore",R.raw.dragon,R.raw.dragon_pic,"2","Mythical"));
+//        animalsList.add(new Animals("Phoneix","Bird that reseructs from the dead","thing","here","3","Mythical"));
+//        animalsList.add(new Animals("Kraken","Destroyer of ships","thing","here","3","Mythical"));
+//        animalsList.add(new Animals("Grifon","Winged death","thing","here","25","Mythical"));
+//        animalsList.add(new Animals("Hydra","multi headed beast","thing","here","3","Mythical"));
+//
+//        animalsList.add(new Animals("Penguin","Cool tuxedo conisur","thing","here","300","Birds"));
+//        animalsList.add(new Animals("Pelican","Aquatic thief","thing","here","15","Birds"));
+//        animalsList.add(new Animals("Pecock","NBC Mascot","thing","here","13","Birds"));
+//        animalsList.add(new Animals("Parrot","Natures recorder","thing","here","is","Birds"));
+//        animalsList.add(new Animals("Perguin Falcon","A cool Falcon","thing","here","is","Birds"));
+//
+//        animalsList.add(new Animals("Shark","Devour of meats","thing","here","35","Sea"));
+//        animalsList.add(new Animals("Dolphin","Shark Slayer","thing","here","125","Sea"));
+//        animalsList.add(new Animals("Whale","Devourer of kelp","thing","here","5","Sea"));
+//        animalsList.add(new Animals("Whale Shark","Devourer of everything","thing","here","10","Sea"));
+//        animalsList.add(new Animals("Platapus","Epic Secret Agent","thing","here","20","Sea"));
+//
+//        animalsList.add(new Animals("Ninja","worlds higest populs yet always unseen","thing","here","10,000","Mammals"));
+//        animalsList.add(new Animals("Pirate","Plundere of treasure","thing","here","300","Mammals"));
+//        animalsList.add(new Animals("Liger","The coolest animal ever","thing","here","10","Mammals"));
+//        animalsList.add(new Animals("Panda","Best thing ever","thing","here","20","Mammals"));
+//        animalsList.add(new Animals("Programer","the writers of this app","thing","here","2","Mammals"));
+//
+//        animalsList.add(new Animals("Ant","common everwhere but here","thing","here","1","Misc"));
+//        animalsList.add(new Animals("Scorpion","Taker of souls","thing","here","1","Misc"));
+//        animalsList.add(new Animals("Snorlax","Blocker of paths","thing","here","20","Misc"));
+//        animalsList.add(new Animals("Snuffalapugus","more cuddly than an elephent","thing","here","1","Misc"));
+//        animalsList.add(new Animals("Demon","Real taker of souls","thing","here","2","Misc"));
      }
 
      public void Populatedatabase(){

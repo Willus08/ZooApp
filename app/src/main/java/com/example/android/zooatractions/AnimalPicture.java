@@ -44,18 +44,11 @@ public class AnimalPicture extends AppCompatActivity implements Serializable {
         textViewdescription.setText(shown.getDescription());
         //imageView.setImageURI(Uri.parse("C:\\Users\\Android\\AndroidStudioProjects\\ZooAtractions\\app\\src\\main\\assets\\Pictures\\dragon_pic.jpg.jpg"));
 
-        Log.d(TAG, "onCreate: "+shown.getImageLocation().toString());
-        Log.d(TAG, "onCreate: "+shown.getSoundLocation().toString());
-        File file = getFileStreamPath(shown.getImageLocation());
-        imageView.setImageURI(Uri.parse(shown.getImageLocation()));
-        imageView.setImageURI(Uri.parse("dragon_pic.jpg"));
-        imageView.setImageURI(Uri.parse("C:\\Users\\Android\\AndroidStudioProjects\\ZooAtractions\\app\\src\\main\\res\\raw\\dragon_pic.jpg"));
-        imageView.setImageURI(Uri.parse("C:\\Users\\Android\\AndroidStudioProjects\\ZooAtractions\\app\\src\\main\\res\\raw\\dragon_pic.jpg"));
+
     }
 
     public void playSound(View view) throws IOException, URISyntaxException {
-        String temp = shown.getSoundLocation();
-        File file = getFileStreamPath(shown.getSoundLocation());
+
         Log.d(TAG, "playSound: " + file);
         MediaPlayer mediaPlayer = MediaPlayer.create(this, Uri.parse("C:\\Users\\Android\\AndroidStudioProjects\\ZooAtractions\\app\\src\\main\\assets\\Sounds\\dragon_pic.mp3"));
 
